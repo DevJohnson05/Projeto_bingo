@@ -1,9 +1,13 @@
 body{
     font-family: 'popines', sans-serif;
 }
-.card{
+#card{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#resp{
+    border-radius: 10px;
+    border: 1px solid #333;
 }
 .btn{
     border-radius: 20px;
@@ -47,4 +51,13 @@ header{
     color: white;
     padding: 10px 0;
     text-align: center;
+}
+#navbar{
+    background-color: #c92c5b;
+    /*border: 1px solid #333;*/
+    box-shadow:1px 5px 1px #d14a72bd;
+    border-radius: 15px;
+}
+#letra{
+    color: red;
 }
