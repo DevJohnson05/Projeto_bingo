@@ -43,6 +43,7 @@ Caso seja utilizado em um ambiente de desenvolvimento Apache/Nginx, será necess
 - Geração aleatória de números e letras do bingo.
 - Armazenamento dos números sorteados no `localStorage`.
 - Exibição do histórico de números sorteados.
+- Acesse [Bingo Gerador de Números Gratuito](https://bingo-gerador-de-numeros-gratuito.42web.io/) para visualizar o funcionamento do projeto.
 
 ### Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
