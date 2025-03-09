@@ -17,5 +17,16 @@ function salvarNumero(numero, letra) {
         numerosSorteados.push(numeroCompleto);
         localStorage.setItem('numerosSorteados', JSON.stringify(numerosSorteados));
         document.getElementById('numeros').innerHTML = numerosSorteados.join(', ');
+
+        let tempoExpiracao = Date.now() + 10 * 60 * 1000; // 10 minutos
+        localStorage.setItem('tempoExpiracao', tempoExpiracao);
+    }
+}
+function verificarTempoExpiracao() {
+    let tempoExpiracao = localStorage.getItem('tempoExpiracao');
+    if (tempoExpiracao && Date.now() > tempoExpiracao) {
+        localStorage.removeItem('numerosSorteados');
+        localStorage.removeItem('tempoExpiracao');
+        document.getElementById('numeros').innerHTML = '';
     }
 }
